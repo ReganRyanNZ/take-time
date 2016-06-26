@@ -1,0 +1,7 @@
+	<%= form_for(@study, class: "study-form") do |f| %>
+  <h2>What I did today:</h2>
+  <%= f.text_field :title, class: "study-field" %><br>
+  <div class="btn-submit">
+   <%= f.submit "I took time today!", class: "btn btn-primary margin-top" %>
+ </div>
+<% end %>

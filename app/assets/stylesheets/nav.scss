@@ -1,0 +1,58 @@
+@import 'variables';
+
+
+.navbar {
+	border-radius: 0;
+	background-color: $blue;
+	position: relative;
+}
+
+.navbar a {
+	color: white;
+	font-weight: lighter;
+	font-size: 120%;
+	letter-spacing: 1px;
+}
+
+.nav .dropdown-menu {
+	background-color: $blue;
+}
+
+.nav .dropdown-menu a {
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.blue-white {
+	background-color: $blue;
+	color: white;
+}
+
+.navbar-brand {
+	float: none;
+}
+
+#logo {
+	float:left;
+	font-size: 1.7em;
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+#logo:hover	{
+	text-decoration: none;
+
+}
+
+.nav.navbar-nav a {
+	&:hover {
+		background-color: inherit;
+	}
+	&:focus {
+		background-color: inherit;
+	}
+}

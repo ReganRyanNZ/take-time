@@ -1,0 +1,46 @@
+@import 'variables';
+
+.ticker-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ticker-box {
+  padding: 5px 10px;
+  max-height: 450px;
+  overflow: scroll;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.recent-study-bar {
+  position: relative;
+  margin-bottom: 35px;
+
+
+  + .recent-study-bar {
+    margin-top: 10px;
+    // background-color: $dark-bar;
+  }
+  .username {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .study-title {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .time {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: gray;
+
+  }
+}

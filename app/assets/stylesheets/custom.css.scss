@@ -1,0 +1,91 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "variables";
+
+body {
+	margin-bottom: 50px; /* for footer */
+}
+
+html {
+	position: relative;
+	min-height:100%;
+	font-size: 10pt;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.col-centered {
+	margin: 0 auto;
+	float: none;
+}
+
+.jumbotron {
+	/*background-image: asset-url('metal-texture.jpg');*/
+	/*background-size: cover;*/
+	height: 300px;
+}
+
+h1 {
+	line-height: 150%;
+	text-align: center;
+}
+
+.margin-top {
+	margin-top: 40px;
+}
+
+.btn-xlarge {
+	font-size: 1.5em;
+}
+
+.listing {
+	list-style:	none;
+	padding-left: 0;
+}
+
+.index-action {
+	padding: 0px 10px;
+}
+
+.readable-container {
+	max-width: 900px;
+	margin: auto;
+	text-align: justify;
+}
+
+.study-field {
+	width: 100%;
+}
+
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	/*margin-top: 35px;*/
+	padding: 0.6em 2em 0em;
+	border-top: 1px solid #665;
+	color: #aaa;
+}
+
+footer a.hover {
+	/*color: #222;*/
+}
+
+footer small {
+	float:left;
+}
+
+footer ul {
+	float:right;
+	list-style: none;
+}
+
+footer ul li {
+	float:left;
+	margin-left: 15px;
+}
+
