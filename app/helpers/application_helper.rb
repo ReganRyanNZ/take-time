@@ -23,6 +23,8 @@ module ApplicationHelper
 			"today"
 		when 1
 			"yesterday"
+		when 2..7
+			time.strftime("%A")
 		else
 			days.to_s + " days ago"
 		end
