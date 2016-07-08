@@ -1,5 +1,18 @@
 @import 'variables';
 
+.btn-take-time {
+  display: inline-block;
+}
+.study-field {
+  height: 40px;
+  padding-left: 6px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18pt;  
+  font-weight: 200;
+
+}
+
 .ticker-title {
   font-size: 2rem;
   text-align: center;
