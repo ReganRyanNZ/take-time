@@ -35,6 +35,12 @@ class StudiesController < ApplicationController
 		
 	end
 
+	def destroy
+		@study = Study.find(params[:study_id])
+		@study.destroy
+		redirect_to study_path
+	end
+
 	private
 	def study_params
 		params.inspect

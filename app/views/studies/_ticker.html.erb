@@ -4,15 +4,15 @@
   </div>
   <% @studies.reverse.each do |study| %>
   <div class="recent-study-bar">
-  <div class="username">
-  <%= study.user.username %>
-  </div>
-  <div class="study-title">
-    <%= study.title %>
-  </div>
-  <div class="time">
-    <%= print_time(study.created_at) %>
-  </div>
+    <div class="username">
+      <%= study.user.username %>
+    </div>
+    <div class="study-title">
+      <%= study.title %>
+    </div>
+    <div class="time">
+      <%= print_time(study.created_at) %>
+    </div>
   </div>
   <% end %>
 </div>
