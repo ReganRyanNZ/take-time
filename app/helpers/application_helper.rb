@@ -17,7 +17,8 @@ module ApplicationHelper
 
 	def print_time(time)
 		# the 12*60*60 is a shameless hack to use NZ timezone
-		seconds = (Time.current + (12*60*60)).beginning_of_day - (time + 12*60*60).beginning_of_day
+		user_timezone = 12*60*60
+		seconds = (Time.current + user_timezone).beginning_of_day - (time + user_timezone).beginning_of_day
 		days = seconds.to_i / (24 * 60 * 60)
 
 		case days

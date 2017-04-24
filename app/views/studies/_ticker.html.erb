@@ -3,14 +3,18 @@
     Recent Studies
   </div>
   <% @studies.reverse.each do |study| %>
-  <div class="recent-study-bar">
+  <div class="ticker-row">
     <div class="username">
       <%= study.user.username %>
     </div>
-    <div class="study-title">
+    <div class="ticker-study-summary">
+      <%= study.summary if study.summary %>
+    </div>
+    <div class="ticker-study-title">
       <%= study.title %>
     </div>
-    <div class="time">
+
+    <div class="ticker-time">
       <%= print_time(study.created_at) %>
     </div>
   </div>

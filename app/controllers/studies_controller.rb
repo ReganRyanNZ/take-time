@@ -32,7 +32,7 @@ class StudiesController < ApplicationController
 			flash[:danger] = "Oh no! Your study could not be saved."
 			render 'edit'
 		end
-		
+
 	end
 
 	def destroy
@@ -44,6 +44,6 @@ class StudiesController < ApplicationController
 	private
 	def study_params
 		params.inspect
-		params.require(:study).permit( :title, :user_id )
+		params.require(:study).permit( :title, :summary, :user_id )
 	end
 end

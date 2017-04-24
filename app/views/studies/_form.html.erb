@@ -1,4 +1,9 @@
 	<%= form_for(@study, class: "study-form") do |f| %>
 
-  <%= f.text_field :title, class: "study-field", placeholder: "What I did today..." %>
+  <%= f.text_field :title, class: "study-field study-title-field", placeholder: "What I did today..." %>
+  <%= f.text_area :summary, id: "study-summary", class: "study-field study-summary-field", placeholder: "Summary..." %>
+
+  <div id="word-count">140 characters</div>
+
+  <%= f.submit class: "primary", value: "I took time today" %>
   <% end %>

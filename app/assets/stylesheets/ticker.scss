@@ -4,13 +4,32 @@
   display: inline-block;
 }
 .study-field {
-  height: 40px;
   padding-left: 6px;
   width: 100%;
-  border-radius: 5px;
-  font-size: 18pt;  
   font-weight: 200;
   border: 1px solid lightgray;
+}
+.study-title-field {
+  font-size: 18pt;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.study-summary-field {
+  font-size: 14pt;
+  height: 120px;
+  resize: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#word-count {
+  text-align: right;
+  color: gray;
+}
+
+.warning {
+  color: #B33A3A;
 }
 
 .ticker-title {
@@ -27,31 +46,32 @@
   border-radius: 5px;
 }
 
-.recent-study-bar {
+.ticker-row {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgray;
 
-
-  + .recent-study-bar {
+  + .ticker-row {
     margin-top: 10px;
     // background-color: $dark-bar;
   }
   .username {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(100%);
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*transform: translateY(100%);*/
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 90%;
   }
-  .study-title {
-    font-size: 1rem;
+  .ticker-study-title {
+    font-weight: bold;
     width: 70%;
   }
-  .time {
+  .ticker-time {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    /*transform: translateY(-50%);*/
     font-size: 0.9rem;
     color: gray;
 
